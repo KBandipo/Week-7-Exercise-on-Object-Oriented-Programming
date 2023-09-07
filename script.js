@@ -19,3 +19,5 @@ class Animals {
     console.log(`${this.species} makes ${this.sound} sound`);
   }
 }
+const Dog = new Animals("Dog", "Woof");
+console.log(Dog);
