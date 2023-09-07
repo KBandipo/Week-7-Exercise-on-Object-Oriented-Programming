@@ -10,4 +10,9 @@
 //Override the Makesound method to include 'Dog' class
 //Make the 'Dog' sound
 
-class Animal {}
+class Animals {
+  constructor(species, sound) {
+    this.species = species;
+    this.sound = sound;
+  }
+}
