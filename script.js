@@ -15,9 +15,12 @@ class Animals {
     this.species = species;
     this.sound = sound;
   }
-  MakeSound() {
-    console.log(`${this.species} makes ${this.sound} sound`);
+  makeSound() {
+    console.log(`${this.species} species makes ${this.sound} sound`);
   }
 }
 const Dog = new Animals("Dog", "Woof");
 console.log(Dog);
+
+//Dog species make sound
+Dog.makeSound();
