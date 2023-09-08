@@ -4,18 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Week 7 Assignment</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        color: #f7f7f7;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.568),
+            rgba(0, 0, 0, 0.568)
+          ),
+          url(./img/dog.jpg);
+        background-size: cover;
+      }
+
+      .big-container {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        row-gap: 400px;
+        column-gap: 30px;
+        max-height: 100vh;
+        position: relative;
+        max-width: 1200px;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+      header {
+        font-size: 30px;
+        letter-spacing: -1.5px;
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: center;
+      }
+      article {
+        grid-column: 1/-1;
+        max-width: 1200px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-90%, -50%);
+        padding: 30px;
+      }
+      .main-content {
+        font-size: 18px;
+        width: 80%;
+      }
+      .images-container {
+        display: flex;
+        gap: 1px;
+        /* background-color: purple; */
+        padding: 20px;
+        justify-self: right;
+        overflow: hidden;
+      }
+      .images-container img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        grid-column: 1;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: all 0.1s;
+      }
+      .images-container img:hover {
+        transform: rotate(45deg);
+      }
+    </style>
   </head>
   <body>
-    <header><h1>Week 7 Assignment</h1></header>
-    <div>
-      <p>
-        Write a JavaScript program that creates a class called 'Animal' with
-        properties for species and sound. Include a method to make the animal's
-        sound. Create a subclass called 'Dog' that inherits from the 'Animal'
-        class and adds an additional property for color. Override the make sound
-        method to include the dog's color. Create an instance of the 'Dog' class
-        and make it make its sound."
-      </p>
+    <div class="big-container">
+      <header><h1 class="container">Week 7 Assignment</h1></header>
+      <article>
+        <p class="main-content">
+          Write a JavaScript program that creates a class called 'Animal' with
+          properties for species and sound. Include a method to make the
+          animal's sound. Create a subclass called 'Dog' that inherits from the
+          'Animal' class and adds an additional property for color. Override the
+          make sound method to include the dog's color. Create an instance of
+          the 'Dog' class and make it make its sound."
+        </p>
+        <div></div>
+      </article>
+      <div class="image-image-container">
+        <div class="container images-container">
+          <img src="./img/image1.jpg" alt="dog image" />
+          <img src="./img/image2.jpg" alt="dog image" />
+          <img src="./img/image3.jpg" alt="dog image" />
+          <img src="./img/image4.jpg" alt="dog image" />
+          <img src="./img/image5.jpg" alt="dog ima+ge" />
+          <img src="./img/image6.jpg" alt="dog image" />
+          <img src="./img/image7.jpg" alt="dog image" />
+          <img src="./img/image8.jpg" alt="dog image" />
+        </div>
+        <div></div>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
