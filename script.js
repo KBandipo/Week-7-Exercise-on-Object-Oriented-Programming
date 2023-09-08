@@ -34,4 +34,11 @@ class DogColor extends Animals {
     super(species, sound);
     this.color = color;
   }
+
+  //Override the makeSound
+  makeSound() {
+    console.log(
+      `${this.color} color ${this.species} species make ${this.sound} sound`
+    );
+  }
 }
