@@ -30,5 +30,7 @@ Dog.makeSound();
 
 //Subclass of 'Dog'
 class DogColor extends Animals {
-  constructor(species, sound, color) {}
+  constructor(species, sound, color) {
+    super(species, sound);
+  }
 }
