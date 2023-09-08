@@ -27,3 +27,6 @@ console.log(Dog);
 
 //Dog species make sound
 Dog.makeSound();
+
+//Subclass of 'Dog'
+class DogColor extends Animals {}
