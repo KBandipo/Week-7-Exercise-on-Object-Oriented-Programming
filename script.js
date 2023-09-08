@@ -29,4 +29,6 @@ console.log(Dog);
 Dog.makeSound();
 
 //Subclass of 'Dog'
-class DogColor extends Animals {}
+class DogColor extends Animals {
+  constructor(species, sound, color) {}
+}
