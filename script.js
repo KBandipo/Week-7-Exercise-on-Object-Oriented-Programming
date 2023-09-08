@@ -10,15 +10,18 @@
 //Override the Makesound method to include 'Dog' class
 //Make the 'Dog' sound
 
+// Create class 'Animal'
 class Animals {
   constructor(species, sound) {
     this.species = species;
     this.sound = sound;
   }
+  //Include a method 'MakeSound'
   makeSound() {
     console.log(`${this.species} species makes ${this.sound} sound`);
   }
 }
+//Create a sub-class 'Dog' that inherit the properties of 'Animal' (Instance of 'Dog')
 const Dog = new Animals("Dog", "Woof");
 console.log(Dog);
 
