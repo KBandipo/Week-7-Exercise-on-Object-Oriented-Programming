@@ -22,14 +22,14 @@ class Animals {
   }
 }
 //Create a sub-class 'Dog' that inherit the properties of 'Animal' (Instance of 'Dog')
-const Dog = new Animals("Dog", "Woof");
-console.log(Dog);
+const testDog = new Animals("Dog", "Woof");
+console.log(testDog);
 
 //Dog species make sound
-Dog.makeSound();
+testDog.makeSound();
 
 //Subclass of 'Dog'
-class DogColor extends Animals {
+class Dog extends Animals {
   constructor(species, sound, color) {
     super(species, sound);
     this.color = color;
@@ -42,3 +42,6 @@ class DogColor extends Animals {
     );
   }
 }
+
+//Make an instance of DogColor class
+const dogColor = new Dog("Dog", "Woof", "Black");
