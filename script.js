@@ -43,5 +43,8 @@ class Dog extends Animals {
   }
 }
 
-//Make an instance of DogColor class
+//Make an instance of dogColor class
 const dogColor = new Dog("Dog", "Woof", "Black");
+console.log(dogColor);
+//dogColor calls makeSound method
+dogColor.makeSound();
