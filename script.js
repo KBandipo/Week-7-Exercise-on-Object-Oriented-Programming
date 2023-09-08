@@ -32,5 +32,6 @@ Dog.makeSound();
 class DogColor extends Animals {
   constructor(species, sound, color) {
     super(species, sound);
+    this.color = color;
   }
 }
