@@ -28,12 +28,12 @@
           ),
           url(./img/dog.jpg);
         background-size: cover;
+        position: relative;
       }
 
       .big-container {
         display: grid;
         grid-template-columns: 1fr 50px;
-        row-gap: 450px;
         column-gap: 30px;
         max-height: 100vh;
         position: relative;
@@ -57,18 +57,24 @@
         position: absolute;
         left: 50%;
         top: 45%;
-        transform: translate(-92%, -50%);
+        transform: translate(-92%, 50%);
         padding: 30px;
       }
       .main-content {
         font-size: 18px;
         width: 80%;
       }
+
+      .image-image-container {
+        position: absolute;
+        left: 50%;
+        top: 90%;
+        transform: translate(-85%, 620%);
+      }
+
       .images-container {
         display: flex;
         gap: 1px;
-        /* background-color: purple; */
-        padding: 20px;
         justify-self: right;
         overflow: hidden;
       }
