@@ -18,6 +18,7 @@ class Animals {
   }
   //Include a method 'MakeSound'
   makeSound() {
+    console.log("The method makeSound called with the instance:::");
     console.log(`${this.species} species makes ${this.sound} sound`);
   }
 }
@@ -37,6 +38,7 @@ class Dog extends Animals {
 
   //Override the makeSound
   makeSound() {
+    console.log("The method makeSound called, but with aditional property:::");
     console.log(
       `${this.color} color ${this.species} species make ${this.sound} sound`
     );
