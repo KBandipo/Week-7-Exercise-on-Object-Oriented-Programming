@@ -4,19 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Week 7 Assignment</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        /* font-size:10px
+        10px/16px = 0.625 =62.5% */
+        /* Percentage of user's browser font-size setting */
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        color: #f7f7f7;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.568),
+            rgba(0, 0, 0, 0.568)
+          ),
+          url(./img/dog.jpg);
+        background-size: cover;
+      }
+
+      .big-container {
+        display: grid;
+        grid-template-columns: 1fr 5rem;
+        row-gap: 45rem;
+        column-gap: 3rem;
+        max-height: 100vh;
+        position: relative;
+        max-width: 120rem;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 120rem;
+      }
+      header {
+        font-size: 3rem;
+        letter-spacing: -1.5px;
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: center;
+        height: 7rem;
+      }
+      article {
+        grid-column: 1/-1;
+        max-width: 120rem;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-92%, -50%);
+        padding: 3rem;
+      }
+      .main-content {
+        font-size: 1.8rem;
+        width: 80%;
+      }
+      .images-container {
+        display: flex;
+        gap: 0.1rem;
+        /* background-color: purple; */
+        padding: 2rem;
+        justify-self: right;
+        overflow: hidden;
+      }
+      .images-container img {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        grid-column: 1;
+        box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: all 0.1s;
+        margin-right: -1.6rem;
+        border: 0.1rem solid #61524c;
+      }
+      .images-container img:hover {
+        transform: rotate(45deg);
+      }
+    </style>
   </head>
   <body>
-    <header><h1>Week 7 Assignment</h1></header>
-    <div>
-      <p>
-        Write a JavaScript program that creates a class called 'Animal' with
-        properties for species and sound. Include a method to make the animal's
-        sound. Create a subclass called 'Dog' that inherits from the 'Animal'
-        class and adds an additional property for color. Override the make sound
-        method to include the dog's color. Create an instance of the 'Dog' class
-        and make it make its sound."
-      </p>
+    <div class="big-container">
+      <header><h1 class="container">Week 7 Assignment</h1></header>
+      <article>
+        <p class="main-content">
+          A JavaScript program that creates a class called 'Animal' with
+          properties for species and sound which includes a method to make the
+          animal's sound. A subclass called 'Dog' was created to inherits from
+          the 'Animal' class and adds an additional property for color to
+          override the make sound method to include the dog's color. An instance
+          of the 'Dog' class was created to make it make its sound."
+        </p>
+        <div></div>
+      </article>
+      <div class="image-image-container">
+        <div class="container images-container">
+          <img src="./img/image1.jpg" alt="dog image" />
+          <img src="./img/image2.jpg" alt="dog image" />
+          <img src="./img/image3.jpg" alt="dog image" />
+          <img src="./img/image4.jpg" alt="dog image" />
+          <img src="./img/image5.jpg" alt="dog ima+ge" />
+          <img src="./img/image6.jpg" alt="dog image" />
+          <img src="./img/image7.jpg" alt="dog image" />
+          <img src="./img/image8.jpg" alt="dog image" />
+        </div>
+        <div></div>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
